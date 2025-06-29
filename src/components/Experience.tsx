@@ -7,7 +7,7 @@ const Experience = () => {
       company: "DANNIE CC",
       position: "Backend Developer",
       location: "Antalya, Turkey",
-      period: "Nov 2024 – Current",
+      period: "Dec 2024 – Current",
       type: "ERP System Development",
       description: "Contributing to the development of a complex ERP system comprising multiple applications.",
       achievements: [
@@ -21,7 +21,7 @@ const Experience = () => {
       position: "Lead Flutter Developer",
       location: "Antalya, Turkey",
       period: "Nov 2022 – July 2024",
-      type: "GoEcoFit Project (Remote Patient Monitoring)",
+      type: "GoEcoFit Project (Corporate Health Solutions)",
       description: "Led architecture and business logic decisions for a corporate health platform.",
       achievements: [
         "Led architecture and business logic decisions for the Flutter app alongside one other Flutter and one React developer",
@@ -35,7 +35,7 @@ const Experience = () => {
       position: "Flutter & React Native Developer",
       location: "Antalya, Turkey",
       period: "Mar 2021 – Nov 2022",
-      type: "Actimi Project (Corporate Health Solutions)",
+      type: "Actimi Project (Remote Patient Monitoring)",
       description: "Developed mobile applications for remote patient monitoring with medical device integrations.",
       achievements: [
         "Initially contributed to a Flutter-based remote patient monitoring app",
