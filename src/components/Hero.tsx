@@ -4,7 +4,7 @@ import { ChevronDown, MapPin, Phone, Mail } from 'lucide-react';
 const Hero = () => {
   const [displayText, setDisplayText] = useState('');
   const [currentIndex, setCurrentIndex] = useState(0);
-  const fullText = "Backend Developer & Mobile App Specialist";
+  const fullText = "Software Developer";
 
   useEffect(() => {
     if (currentIndex < fullText.length) {
