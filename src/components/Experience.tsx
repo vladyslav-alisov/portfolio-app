@@ -7,7 +7,7 @@ const Experience = () => {
       company: "DANNIE CC",
       position: "Backend Developer",
       location: "Antalya, Turkey",
-      period: "Dec 2024 – Current",
+      period: "Dec 2024 – Oct 2025",
       type: "ERP System Development",
       description: "Contributing to the development of a complex ERP system comprising multiple applications.",
       achievements: [
