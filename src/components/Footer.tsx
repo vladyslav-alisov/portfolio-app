@@ -1,25 +1,8 @@
-import React from 'react';
-import { Heart } from 'lucide-react';
-
-const Footer = () => {
-  return (
-    <footer className="bg-gray-900 text-white py-8">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col md:flex-row justify-between items-center">
-          <div className="mb-4 md:mb-0">
-            <p className="text-sm text-gray-400">
-              © 2024 Vladyslav Alisov. All rights reserved.
-            </p>
-          </div>
-          <div className="flex items-center space-x-1 text-sm text-gray-400">
-            <span>Made with</span>
-            <Heart size={16} className="text-red-500 fill-current animate-pulse" />
-            <span>using React & Tailwind CSS</span>
-          </div>
-        </div>
-      </div>
-    </footer>
-  );
-};
-
-export default Footer;
+import { useEffect, useState } from 'react';
+import { ArrowUp } from 'lucide-react';
+const localTime = () => new Intl.DateTimeFormat('en-GB', { hour: '2-digit', minute: '2-digit', timeZone: 'Europe/Istanbul' }).format(new Date());
+export default function Footer() {
+  const [time, setTime] = useState(localTime);
+  useEffect(() => { const interval = setInterval(() => setTime(localTime()), 60000); return () => clearInterval(interval); }, []);
+  return <footer className="site-footer"><div className="container"><div className="footer-top"><a className="wordmark" href="#home" aria-label="Vladyslav Alisov — back to top">va<span>®</span></a><p>A little curiosity.<br /><span className="muted">A lot of intention.</span></p><a href="#home" className="back-to-top mono">BACK TO TOP <span><ArrowUp size={18} /></span></a></div><div className="footer-bottom mono"><span>© {new Date().getFullYear()} VLADYSLAV ALISOV</span><span>ANTALYA, TR <span className="accent">{time}</span></span><span>CRAFTED WITH CARE & CODE.</span></div></div></footer>;
+}
